@@ -32,6 +32,7 @@ jobs:
           SONAR_HOST_URL: http://localhost:9000
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
           SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}
+          run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sqp_1c51f582ab8f431ededb0ed90bbfd44de10212fe
           # Add other required SonarQube environment variables if needed
 
       - name: Stop SonarQube container
