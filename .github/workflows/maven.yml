@@ -30,7 +30,7 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@v1
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: http://localhost:9000
+          SONAR_HOST_URL: https://e2da-110-226-178-161.ngrok-free.app/
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
           SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}
           # Add other required SonarQube environment variables if needed
