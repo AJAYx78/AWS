@@ -34,4 +34,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}  # Set the SonarQube username as a secret in your repository
+          SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}  # Set the SonarQube password as a secret in your repository
+
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
