@@ -23,12 +23,11 @@ jobs:
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v1
+        with:
+          projectBaseDir: ./  # Optional: Specify the project base directory
+          distribution: "SonarQube"  # Specify the version of SonarQube
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Set the SonarQube token as a secret in your repository
           SONAR_HOST_URL: http://localhost:9000  # Update with the correct SonarQube server URL
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}  # Set the SonarQube username as a secret in your repository
           SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}  # Set the SonarQube password as a secret in your repository
-        with:
-          projectBaseDir: ./  # Optional: Specify the project base directory
-          distribution: "SonarQube"  # Specify the version of SonarQube
-
