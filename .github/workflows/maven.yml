@@ -31,3 +31,7 @@ jobs:
           SONAR_HOST_URL: http://localhost:9000  # Update with the correct SonarQube server URL
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}  # Set the SonarQube username as a secret in your repository
           SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}  # Set the SonarQube password as a secret in your repository
+
+
+
+
