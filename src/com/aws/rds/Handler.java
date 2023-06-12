@@ -15,8 +15,9 @@ public class Handler implements RequestHandler<Course, Boolean> {
 
     static Connection connection;
     static {
-        try {
+        try {   
 
+            
             String username = System.getenv("admin");
 
             String password = System.getenv("admin123");
