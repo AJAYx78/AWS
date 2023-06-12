@@ -30,6 +30,5 @@ jobs:
           SONAR_PASSWORD: ${{ secrets.SONAR_PASSWORD }}  # Set the SonarQube password as a secret in your repository
         with:
           projectBaseDir: ./  # Optional: Specify the project base directory
-
-
+          distribution: "SonarQube"  # Specify the version of SonarQube
 
