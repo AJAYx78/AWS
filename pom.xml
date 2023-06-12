@@ -22,6 +22,11 @@
     </plugin>
   </plugins>
   </build>
+<properties>
+    <sonar.login>admin</sonar.login>
+    <sonar.password>sonar</sonar.password>
+</properties>
+
   
   
   
