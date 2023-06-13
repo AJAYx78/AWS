@@ -3,10 +3,7 @@ package com.aws.rds;
 public class Course {
     private int id;
 
-
-    
-	
-	private String name;
+ private String name;
 	private String code;
 
 	
