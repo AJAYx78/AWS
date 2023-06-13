@@ -2,6 +2,8 @@ package com.aws.rds;
 
 public class Course {
     private int id;
+
+
     
 	
 	private String name;
