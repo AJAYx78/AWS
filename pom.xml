@@ -24,7 +24,7 @@
   </build>
 <properties>
     <sonar.login>admin</sonar.login>
-    <sonar.password>sonar</sonar.password>
+    <sonar.password>sqp_fc8ed73d548f9bcb2c3f32dcbac13ea0b0d766ee</sonar.password>
 </properties>
 
   
